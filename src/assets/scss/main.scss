@@ -1,0 +1,32 @@
+@import 'import/fonts';
+@import 'import/layout/all.css';
+@import 'import/layout/baguetteBox.min.css';
+@import 'import/layout/bootsnav.css';
+@import 'import/layout/bootstrap-select.css';
+@import 'import/layout/bootstrap.min.css';
+@import 'import/layout/carousel-ticker.css';
+@import 'import/layout/code_animate.css';
+@import 'import/layout/custom.css';
+// @import 'import/layout/jquery-ui.css';
+@import 'import/layout/owl.carousel.min.css';
+@import 'import/layout/superslides.css';
+@import 'import/layout/style.css';
+@import 'import/layout/responsive.css';
+// @import 'import/layout/header';
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	color: #666666 !important;
+	font-size: 15px !important;
+	line-height: 1.80857 !important;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

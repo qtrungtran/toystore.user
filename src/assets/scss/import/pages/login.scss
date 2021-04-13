@@ -1,0 +1,46 @@
+.page_login {
+	max-width: 500px;
+	margin: 80px auto;
+	padding: 0 20px;
+	.form-row {
+		.form-group {
+			margin-bottom: 2rem;
+			line-height: normal;
+			.form-control {
+				input {
+					padding: 10px 14px;
+					font-size: 15px;
+					&::placeholder {
+						font-family: 'Montserrat';
+						font-size: 15px;
+					}
+				}
+				p {
+					margin: 8px 0 0;
+				}
+			}
+		}
+	}
+	label {
+		margin-bottom: 8px;
+		font-size: 16px;
+	}
+	button.btn {
+		color: white;
+		padding: 6px 30px;
+		border: none;
+		font-size: 18px;
+	}
+	.action {
+		margin-top: 20px;
+		label.question {
+			margin-bottom: 0;
+		}
+		button.btn-register {
+			color: #d33b33;
+			border: none;
+			font-size: 16px;
+			background-color: transparent;
+		}
+	}
+}
