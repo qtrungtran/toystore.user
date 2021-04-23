@@ -13,15 +13,15 @@ import { useSearch } from "app/context/SearchContext";
 
 const Header = () => {
 	const [accountMenuOpen, setAccountMenu] = useState(false);
-	const toggleAccountMenu = e => {
+	const toggleAccountMenu = (e) => {
 		e.stopPropagation();
-		setAccountMenu(pre => !pre);
+		setAccountMenu((pre) => !pre);
 	};
 	const handleCloseAccountMenu = () => {
 		setAccountMenu(false);
 	};
-	const { cart } = useSelector(state => state.cart);
-	const { user } = useSelector(state => state.user);
+	const { cart } = useSelector((state) => state.cart);
+	const { user } = useSelector((state) => state.user);
 	const pathname = useLocation().pathname;
 	const [openCart, setOpenCart] = useState(false);
 	const history = useHistory();
@@ -98,9 +98,7 @@ const Header = () => {
 															<NavLink to="/profile">Hồ sơ</NavLink>
 														</li>
 														<li>
-															<NavLink to="/my-product">
-																Sản phẩm của tôi
-															</NavLink>
+															<NavLink to="/my-product">Sản phẩm của tôi</NavLink>
 														</li>
 														<li>
 															<NavLink to="/my-order">Đơn mua</NavLink>
@@ -164,12 +162,7 @@ const Header = () => {
 								<img src={logo} className='logo' alt='' />
 							</a> */}
 							<NavLink to="/">
-								<img
-									src={logo}
-									className="logo"
-									alt=""
-									style={{ height: 81 }}
-								/>
+								<img src={logo} className="logo" alt="" style={{ height: 120 }} />
 							</NavLink>
 						</div>
 
@@ -184,15 +177,13 @@ const Header = () => {
 										className="form-control"
 										placeholder="Tìm kiếm"
 										ref={inputSearch}
-										onKeyPress={e => {
+										onKeyPress={(e) => {
 											if (e.key === "Enter") {
 												searchChange(inputSearch.current.value);
 											}
 										}}
 									/>
-									<button
-										onClick={() => searchChange(inputSearch.current.value)}
-									>
+									<button onClick={() => searchChange(inputSearch.current.value)}>
 										<i className="fa fa-search"></i>
 									</button>
 								</div>
@@ -221,26 +212,18 @@ const Header = () => {
 								{cart.cartDetails?.map((detail, index) => (
 									<li key={index}>
 										<a href="/" className="photo">
-											<img
-												src={detail.product.images[0]?.path}
-												className="cart-thumb"
-												alt=""
-											/>
+											<img src={detail.product.images[0]?.path} className="cart-thumb" alt="" />
 										</a>
 										<h6>
 											<a href="/">{detail.product.name}</a>
 										</h6>
 										<p>
-											{detail.quantity}x -{" "}
-											<span className="price">${detail.price}</span>
+											{detail.quantity}x - <span className="price">${detail.price}</span>
 										</p>
 									</li>
 								))}
 								<li className="total">
-									<buton
-										className="btn btn-default hvr-hover btn-cart"
-										onClick={() => history.push("/cart")}
-									>
+									<buton className="btn btn-default hvr-hover btn-cart" onClick={() => history.push("/cart")}>
 										Xem giỏ hàng
 									</buton>
 									<span className="float-right">
@@ -257,6 +240,6 @@ const Header = () => {
 };
 
 Header.propTypes = {
-	isAuthenticated: bool
+	isAuthenticated: bool,
 };
 export default Header;

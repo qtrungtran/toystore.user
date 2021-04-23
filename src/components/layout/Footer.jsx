@@ -11,9 +11,8 @@ const Footer = () => {
 								<div className="footer-widget">
 									<h4>The Toy Store</h4>
 									<p>
-										Giữa những bộn bề cuộc sống thường nhật, nếu bên cạnh chúng ta có những người bạn là những vật dụng
-										thường ngày mang hình dáng đáng yêu, thì khi sử dụng sản phẩm mỗi chúng ta sẽ được trẻ hơn trong tâm
-										hồn, vui vẻ trong mọi khoảng khắc.
+										Để con em chúng ta phát triển một cách tốt nhất. The Toy Store là nơi để bạn có thể mua được những
+										đồ chơi phù hợp nhất cho trẻ.
 									</p>
 									<ul>
 										<li>
@@ -79,22 +78,22 @@ const Footer = () => {
 									<ul>
 										<li>
 											<p>
-												<i className="fas fa-map-marker-alt"></i>Địa chỉ: 123a Nguyễn Chí Thanh,
+												<i className="fas fa-map-marker-alt"></i>Địa chỉ: 54 Nguyễn Lương Bằng,
 												<br />
-												Quận Hải Châu,
+												Quận Liên Chiểu,
 												<br />
 												Thành phố Đà Nẵng
 											</p>
 										</li>
 										<li>
 											<p>
-												<i className="fas fa-phone-square"></i>Điện thoại: <a href="tel:090.247.1988">090.247.1988</a>
+												<i className="fas fa-phone-square"></i>Điện thoại: <a href="tel:098.880.156">098.880.156</a>
 											</p>
 										</li>
 										<li>
 											<p>
 												<i className="fas fa-envelope"></i>Email:{" "}
-												<a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a>
+												<a href="mailto:toystore@gmail.com">toystore@gmail.com</a>
 											</p>
 										</li>
 									</ul>

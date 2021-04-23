@@ -218,7 +218,7 @@ const CategoryDetailContent = () => {
 												}}
 											>
 												<option data-display="Select" value="0">
-													Nothing
+													None
 												</option>
 												<option value="1">Mới nhất</option>
 												<option value="2">Bán chạy</option>
