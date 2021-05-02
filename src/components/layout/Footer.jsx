@@ -9,10 +9,10 @@ const Footer = () => {
 						<div className="row">
 							<div className="col-lg-4 col-md-12 col-sm-12">
 								<div className="footer-widget">
-									<h4>The Toy Store</h4>
+									<h4>My Shopee</h4>
 									<p>
-										Để con em chúng ta phát triển một cách tốt nhất. The Toy Store là nơi để bạn có thể mua được những
-										đồ chơi phù hợp nhất cho trẻ.
+										Để con em chúng ta phát triển một cách tốt nhất. My Shopee là nơi để bạn có thể mua được những đồ
+										chơi phù hợp nhất cho trẻ.
 									</p>
 									<ul>
 										<li>
@@ -106,7 +106,7 @@ const Footer = () => {
 
 			<div className="footer-copyright">
 				<p className="footer-company">
-					<a href="/">The Toy Store</a>
+					<a href="/">My Shopee</a>
 				</p>
 			</div>
 
