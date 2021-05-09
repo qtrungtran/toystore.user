@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import { Helmet } from "react-helmet";
 import nProgress from "nprogress";
 import AppRouter from "./routing/AppRouter";
@@ -19,7 +19,10 @@ const RouteFallback = () => {
 function App() {
 	return (
 		<div className="App">
-			<div
+			<div>
+				<MessengerCustomerChat pageId="101604918772306" appId="207043767677316" />
+			</div>
+			{/* <div
 				class="zalo-chat-widget"
 				data-oaid="1936573808915194711"
 				data-welcome-message="Rất vui khi được hỗ trợ bạn!"
@@ -29,7 +32,7 @@ function App() {
 			></div>
 			<Helmet>
 				<script src="https://sp.zalo.me/plugins/sdk.js"></script>
-			</Helmet>
+			</Helmet> */}
 			<Suspense fallback={<RouteFallback />}>
 				<SnackbarProvider>
 					<AppRouter />
