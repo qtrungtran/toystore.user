@@ -49,8 +49,7 @@ const Paypal = () => {
 					}}
 					currency="USD"
 					options={{
-						clientId:
-							"AahRbFwBxZbe_2LApCXd-8j3eyIuwbBEqM0qU6Jdmey7HPU_RHxCkCl_1MDZCxQVZAJgJPr9rsmseJs7"
+						clientId: "AQAbunPoq-8ZpQ_rIzKBO96RfBgjXEtjzTKsk3hbCrTp5Bf4P2yZMbsMunmwZOYBDf24lA2ICfTitROj",
 					}}
 				/>
 			</div>
